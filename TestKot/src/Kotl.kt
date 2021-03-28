@@ -21,7 +21,16 @@ fun main () {
     }
     println(season)
 
+    val time = 23
+    val weatherIsGood = true
+    val result = when {
+        time in 6..22 && weatherIsGood -> {"Гулять"}
+        time in 6..22 && !weatherIsGood -> {"Делать домашние дела"}
+        else -> {"Спать"}
+    }
+    println(result)
 }
+
 
 
 
