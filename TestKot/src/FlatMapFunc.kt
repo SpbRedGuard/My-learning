@@ -45,5 +45,8 @@ fun main() {
     val average4 = data2.filter { it.value.all { it >=0}}.flatMap { it.value }.average()
     println(average4)
 
+    //val average4 = data2.filterNot { it.value.any {it < 0} }.flatMap { it.value }.average()
+    //println()
+
 
 }
